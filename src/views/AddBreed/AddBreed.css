@@ -43,20 +43,19 @@
 }
 
 .return_button {
-  background-color: darkorange;
+  background-color: #FFB26B;
   border-radius: 1rem;
   color: black;
   border: none;
   transition: 0.5s;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 20px;
   cursor: pointer;
 }
 
 .return_button:hover {
-  color: bisque;
-  background-color: red;
-  box-shadow: 0 0 1rem white, 0 0 4rem white, 0 0 8rem white;
+  /* color: #FFD56F; */
+  background-color: #FF7B54;
 }
 
 .form_input {
