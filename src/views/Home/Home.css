@@ -1,5 +1,5 @@
 .home_container {
-  background-image: url("../../assets/Background.jpg");
+  background-image: url("../../assets/Background.webp");
   min-height: 100vh;
   background-size: cover;
   background-position: center;
@@ -10,12 +10,13 @@
 }
 
 .home_title {
-  color: darkorange;
-  text-shadow: 2px 2px bisque;
+  color: #ff7b54;
+  text-shadow: 2px 2px #ffd56f;
+  padding: 5px;
 }
 
 .breed_button {
-  background-color: darkorange;
+  background-color: #ffb26b;
   border-radius: 1rem;
   color: black;
   border: none;
@@ -26,13 +27,26 @@
 }
 
 .breed_button:hover {
-  background-color: red;
-  box-shadow: 0 0 1rem white, 0 0 4rem white, 0 0 8rem white
+  background-color: #ff7b54;
+  /* box-shadow: 0 0 1rem white, 0 0 4rem white, 0 0 8rem white */
 }
 
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
+  background-color: #939b62;
+}
+
+.sort_filter_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.sort_filter {
+  display: flex;
   align-items: center;
 }

@@ -1,19 +1,19 @@
 .card_name {
-  color: black;
-  text-shadow: 1px 1px bisque;
+  color: #939B62;
+  text-shadow: 1px 1px #FF7B54;
   font-size: large;
   
 }
 
 .card_text {
-  color: bisque;
-  text-shadow: 1px 1px black;
+  color: #939B62;
+  text-shadow: 1px 1px #FF7B54;
   font-size: small;
   font-weight: 600;
 }
 
 .card_div {
-  background-color: rgba(223, 126, 16, 0.5);
+  background-color: #FFD56F;
   width: 280px;
   border-radius: 1rem;
   height: 320px;
@@ -22,8 +22,8 @@
 }
 
 .card_div:hover {
-  background-color: red;
-  box-shadow: 0 0 1rem white, 0 0 4rem white, 0 0 8rem white;
+  background-color: #FFB26B;
+  /* box-shadow: 0 0 1rem white, 0 0 4rem white, 0 0 8rem white; */
 }
 
 .card_image {

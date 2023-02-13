@@ -5,7 +5,7 @@
 }
 
 .search_button {
-    background-color: darkorange;
+    background-color:#FFB26B;
     border-radius: 2rem;
     transition: 0.5s;
     font-weight: 600;
@@ -15,5 +15,5 @@
 }
 
 .search_button:hover {
-    background-color: red;
+    background-color: #FF7B54;
 }

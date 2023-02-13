@@ -6,8 +6,7 @@ import { getDogs } from "../../redux/actions";
 import Paging from "../../components/Paging/Paging";
 import Sort from "../../components/Sort/Sort";
 import Filter from "../../components/Filter/Filter";
-import SearchBar from "../../components/SearchBar/SearchBar";
-import { Link } from "react-router-dom";
+import Navbar from "../../components/NavBar/NavBar";
 
 const Home = () => {
   const allDogs = useSelector((state) => state.dogs);
@@ -31,15 +30,13 @@ const Home = () => {
   };
   return (
     <div className="home_container">
-      <div className="header">
-        <h1 className="home_title">The Dog Wiki</h1>
-        <SearchBar />
-        <Link to="/addbreed">
-          <button className="button">Add Breed</button>
-        </Link>
+      <Navbar />
+      <div className="sort_filter_container">
+        <div className="sort_filter">
+          <Sort setCurrentPage={setCurrentPage} setOrder={setOrder} />
+          <Filter />
+        </div>
       </div>
-      <Sort setCurrentPage={setCurrentPage} setOrder={setOrder} />
-      <Filter />
       <Paging
         dogsPerPage={dogsPerPage}
         allDogs={allDogs.length}
