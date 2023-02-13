@@ -3,7 +3,6 @@ import { Link, useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { postDog, getTemperaments } from "../../redux/actions";
 import "./AddBreed.css";
-import NavBar from "../../components/NavBar/NavBar";
 
 function validate(input) {
   let errors = {};
@@ -110,13 +109,9 @@ export default function AddBreed() {
 
   return (
     <>
-      <NavBar />
       <div className="form_container">
-        <Link to="/home">
-          <button className="return_button">Return</button>
-        </Link>
-        <h1 className="form_title">Add your dog breed!</h1>
-        <form onSubmit={(e) => handleSubmit(e)}>
+        <form className="form" onSubmit={(e) => handleSubmit(e)}>
+          <h1 className="form_title">Add your dog breed!</h1>
           <div>
             <label className="form_label">Name:</label>
             <input
@@ -254,12 +249,15 @@ export default function AddBreed() {
           <br />
           <button
             type="submit"
-            className="button"
+            className="return_button"
             disabled={Object.keys(errors).length > 0}
           >
             Create Dog
           </button>
         </form>
+        <Link to="/home">
+          <button className="return_button">Return</button>
+        </Link>
       </div>
     </>
   );

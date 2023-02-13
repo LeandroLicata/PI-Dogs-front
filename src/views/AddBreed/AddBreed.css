@@ -1,21 +1,22 @@
 .form_container {
-  background-image: url("../../assets/Background.jpg");
+  background-image: url("../../assets/Background.webp");
   min-height: 100vh;
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
   background-attachment: fixed;
+  align-items: center;
 }
 
 .form_title {
-  color: darkorange;
-  text-shadow: 2px 2px bisque;
+  color: #FF7B54;
+  text-shadow: 2px 2px #FFB26B;
 }
 
 .form_label {
-  color: bisque;
-  text-shadow: 1px 1px black;
+  color: #939B62;
+  text-shadow: 1px 1px #FF7B54;
 }
 
 .shown_temperaments {
@@ -67,4 +68,11 @@
 .error {
   color: red;
   text-shadow: 1px 1px black;
+}
+
+.form {
+  background-color: #FFD56F;
+  width: 500px;
+  margin: 10px;
+  border-radius: 2rem;
 }
